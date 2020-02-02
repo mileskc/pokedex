@@ -10,8 +10,9 @@ header {
     width: 100%;
     background-color: rgb(223, 79, 79);
     border-radius: 10px;
-    border: 5px double rgb(235, 176, 110);;
+    border: 5px double rgb(235, 176, 110);
     flex-direction: column;
+    font-family: 'Caveat', cursive;
 }
 
 h1 {
@@ -44,7 +45,8 @@ nav {
     justify-content: center;
 }
 .entry {
-    width: 170px;
+    width: 200px;
+    height: 280px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -57,14 +59,18 @@ nav {
     box-shadow: 8px 8px 8px rgb(70, 67, 67);
 }
 
+.poke-name {
+    font-family: 'Roboto Mono', monospace;
+}
+
 a {
     display: flex;
     flex-wrap: wrap;
     font-size: 25px;
     color: white;
-    margin: 10px;
+    margin-bottom: 10px;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 a:hover {
@@ -74,7 +80,7 @@ a:hover {
 img {
     /* width: 130px; */
     width: 85%;
-    height: 35%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -95,7 +101,50 @@ input {
     align-items: flex-end;
 }
 
-button {
+.button-delete {
+    font-size: 18px;
+    height: 30px;
+    color: white;
+    margin: 20px 10px 10px 10px;
+    /* background-color: rgb(235, 176, 110); */
+    background-color: rgb(102, 109, 204);
+    /* border: solid rgb(223, 79, 79) 2px; */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+/* .delete-form {
+    font-size: 20px;
+    height: 40px;
+} */
+
+.button-container {
+    display: flex;
+}
+
+.button-edit {
+    font-size: 18px;
+    height: 30px;
+    margin-top: 15px;
+    /* background-color: rgb(235, 176, 110); */
+    /* border: solid rgb(235, 176, 110) 2px; */
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+
+.button-create {
     font-size: 30px;
-    height: 100%;
+    border: 3px solid rgb(235, 176, 110);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(223, 79, 79);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-create:hover {
+    border: 3px solid gray;
+    cursor: pointer;
 }

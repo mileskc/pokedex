@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokedex</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-    />
+    /> -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
@@ -16,20 +17,23 @@
     <header>
         <h1>POKEDEX</h1>
         <nav>
-        <a id = "create" href="/pokedex/new"><button>Create New Pokemon!</button></a>
+        <a id = "create" href="/pokedex/new"><button class="button-create">Create New Pokemon!</button></a>
         <br>
         <br>
         </nav>
     </header>
     <% pokedex.forEach((pokemon, index) => { %>
         <div class = "entry">
-            <a href="/pokedex/<%=index%>"><%=pokemon.name%></a>
+            <a class = "poke-name" href="/pokedex/<%=index%>"><%=pokemon.name%></a>
             <img src ="<%=pokemon.img%>">
-            <form action = "/pokedex/<%=index%>?_method=DELETE" method = "POST">
-                <input class = "button-primary" type = "submit" value = "DELETE">
-            </form>
-            <div id = "edit">
-                <a href="/pokedex/<%=index%>/edit">Edit</a>
+            <div class = "button-container">
+                <form class = "delete-form" action = "/pokedex/<%=index%>?_method=DELETE" method = "POST">
+                    <!-- <input class = "button-delete" type = "submit" value = "DELETE"> -->
+                    <button class = "button-delete">DELETE</button>
+                </form>
+                <div id = "edit">
+                    <a href="/pokedex/<%=index%>/edit"><button class= "button-edit">EDIT</button></a>
+                </div>
             </div>
         </div>
    <% }) %>
