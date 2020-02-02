@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000
 const methodOverride = require('method-override')
 
 //middleware
@@ -76,6 +76,6 @@ app.put('/pokedex/:index', (req, res) => {
     res.redirect('/pokedex')
 })
 
-app.listen(port, () =>{
+app.listen(PORT, () =>{
     console.log('listening on', 3000)
 })
