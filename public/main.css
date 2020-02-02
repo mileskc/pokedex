@@ -1,0 +1,101 @@
+
+body {
+    /* background: linear-gradient(rgb(214, 67, 67), rgb(156, 65, 65)) */
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(223, 79, 79);
+    border-radius: 10px;
+    border: 5px double rgb(235, 176, 110);;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80px;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#create {
+    font-size: 30px;
+    padding: 20px;
+    /* color: rgb(247, 219, 144); */
+}
+
+#create:hover {
+    color: rgb(226, 125, 31);
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1200px; */
+    width: 100%;
+    justify-content: center;
+}
+.entry {
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(65, 60, 60);
+    margin: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    border: 10px solid gray;
+    box-shadow: 8px 8px 8px rgb(70, 67, 67);
+}
+
+a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(172, 168, 168);
+}
+
+img {
+    /* width: 130px; */
+    width: 85%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    margin: 15px;
+    color: white;
+}
+
+#edit {
+    display: flex;
+    align-items: flex-end;
+}
+
+button {
+    font-size: 30px;
+    height: 100%;
+}

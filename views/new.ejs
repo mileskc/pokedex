@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Pokemon!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <link rel="stylesheet" href="/new.css">
+</head>
+<body>
+    <div class = "page">
+        <header>
+            <h1>New Pokemon</h1>
+            <a href = "/pokedex"><button>Back to Pokedex</button></a>
+        </header>
+        <main>
+            <form action="/pokedex" method="POST">
+                <label for ="name">Name</label>
+                <input type = "text" name = "name" id = "name">
+                <label for ="img">Image (URL)</label>
+                <input type = "text" name = "img" id = "img">
+                <label for ="id">ID</label>
+                <input type="text" name="id" id="id">
+                <label for ="type">Type</label>
+                <input type="text" name="type" id="type">
+                <label for ="hp">HP</label>
+                <input type="text" name="hp" id="hp">
+                <label for ="attack">Attack</label>
+                <input type="text" name="attack" id="attack">
+                <label for ="defense">Defense</label>
+                <input type="text" name="defense" id="defense">
+                <label for ="spattack">SP Attack</label>
+                <input type="text" name="spattack" id="spattack">
+                <label for ="spdefense">SP Defense</label>
+                <input type="text" name="spdefense" id="spdefense">
+                <label for ="speed">Speed</label>
+                <input type="text" name="speed" id="speed">
+                <input class = "button-primary" type = "submit" value ="Create new pokemon">
+            </form>
+        </main>
+    </div>  
+</body>
+</html>

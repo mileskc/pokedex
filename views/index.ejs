@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class = "page">
+    <header>
+        <h1>POKEDEX</h1>
+        <nav>
+        <a id = "create" href="/pokedex/new"><button>Create New Pokemon!</button></a>
+        <br>
+        <br>
+        </nav>
+    </header>
+    <% pokedex.forEach((pokemon, index) => { %>
+        <div class = "entry">
+            <a href="/pokedex/<%=index%>"><%=pokemon.name%></a>
+            <img src ="<%=pokemon.img%>">
+            <form action = "/pokedex/<%=index%>?_method=DELETE" method = "POST">
+                <input class = "button-primary" type = "submit" value = "DELETE">
+            </form>
+            <div id = "edit">
+                <a href="/pokedex/<%=index%>/edit">Edit</a>
+            </div>
+        </div>
+   <% }) %>
+</div>
+</body>
+</html>

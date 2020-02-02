@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+    <div class = "page">
+    <header>
+        <h1><%=pokemon.name%></h1>
+        <h2><%=pokemon.id%></h2>
+        <a href = "/pokedex"><button>Back to Pokedex</button></a>
+    </header>
+    <main>
+        <div class = "type">
+            <h3>Type</h3>
+            <p><%=pokemon.type%></p>
+        </div>
+        <img src = "<%=pokemon.img%>">
+        <div class = "stats">
+            <h4>STATS</h4>
+            <h5>HP: <%=pokemon.stats.hp%></h5>
+            <h5>Attack: <%=pokemon.stats.attack%></h5>
+            <h5>Defense: <%=pokemon.stats.defense%></h5>
+            <h5>Special Attack: <%=pokemon.stats.spattack%></h5>
+            <h5>Special Defense: <%=pokemon.stats.spdefense%></h5>
+            <h5>Speed: <%=pokemon.stats.speed%></h5>
+        </div>
+    </main>
+</div>
+</body>
+</html>
