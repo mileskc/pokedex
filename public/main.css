@@ -126,6 +126,7 @@ input {
     font-size: 18px;
     height: 30px;
     margin-top: 15px;
+    background-color: white;
     /* background-color: rgb(235, 176, 110); */
     /* border: solid rgb(235, 176, 110) 2px; */
     font-family: 'Roboto', sans-serif;

@@ -17,6 +17,29 @@ header {
     justify-content: center;
     border: 5px double rgb(235, 176, 110);
     border-radius: 10px;
+    padding: 10px;
+}
+
+header h1 {
+    font-family: "Caveat", cursive;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button-create {
+    font-size: 30px;
+    border: 3px solid rgb(235, 176, 110);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(223, 79, 79);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-create:hover {
+    border: 3px solid gray;
+    cursor: pointer;
 }
 
 main {
@@ -28,6 +51,8 @@ main {
 }
 
 form {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
     background-color: rgb(235, 176, 110);
@@ -40,9 +65,29 @@ form {
 
 input {
     width: 90%;
+    height: 20px;
 }
 
-button {
+.label {
+    width: 90%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* button {
+    margin: 10px;
     font-size: 25px;
     height: 100%;
+} */
+
+.button-delete {
+    font-size: 1rem;
+    height: 50px;
+    color: white;
+    margin: 20px 10px 10px 10px;
+    /* background-color: rgb(235, 176, 110); */
+    background-color: rgb(102, 109, 204);
+    /* border: solid rgb(223, 79, 79) 2px; */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
