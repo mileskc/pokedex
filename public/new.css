@@ -68,7 +68,7 @@ input {
     height: 20px;
 }
 
-.label {
+label {
     width: 90%;
     font-family: 'Roboto Mono', monospace;
 }
