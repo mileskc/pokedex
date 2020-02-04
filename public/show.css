@@ -8,6 +8,32 @@ header {
     border: 5px double rgb(235, 176, 110);
 }
 
+header h1 {
+    font-family: 'Roboto Mono', monospace;
+    /* text-transform: uppercase; */
+    font-size: 50px;
+}
+
+header h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+
+.button-create {
+    font-size: 30px;
+    border: 3px solid rgb(235, 176, 110);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(223, 79, 79);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-create:hover {
+    border: 3px solid gray;
+    cursor: pointer;
+}
+
 button {
     font-size: 25px;
     height: 100%;
@@ -32,7 +58,7 @@ main {
     margin: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
 }
 
 .type {
@@ -43,11 +69,16 @@ main {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-items: center;
     border: solid gray 10px;
     color: white;
     line-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.type p {
+    font-family: 'Roboto Mono', cursive;
 }
 
 h3 {
@@ -63,12 +94,12 @@ p {
     background-color: rgb(65, 60, 60);
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     align-items: center; 
     border: solid gray 10px;
     margin: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
 }
 
@@ -76,17 +107,21 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     color: white;
-    width: 100%;
+    width: 80%;
     padding: 0px 50px;
     font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
 }
 
 h5 {
     line-height: 80%;
     padding: 0px 50px;
     display: flex;
-    width: 100%;
+    width: 80%;
     color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
 }
 
 img {
