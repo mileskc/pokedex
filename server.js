@@ -37,7 +37,6 @@ app.get('/pokedex/:index', (req, res) => {
 
 //create
 app.post('/pokedex', (req, res) => {
-    // pokedex.push(req.body.name, req.body.id, req.body.type, req.body.hp, req.body.attack, req.body.defense, req.body.spattack, req.body.spdefense, req.body.speed)
     const newPokemon = {}
     newPokemon.name = req.body.name
     newPokemon.img = req.body.img
@@ -51,7 +50,6 @@ app.post('/pokedex', (req, res) => {
                         spdefense: req.body.spdefense,
                         speed:req.body.speed
     }    
-    // pokedex.push(req.body)
     pokedex.unshift(newPokemon)
     res.redirect('/pokedex')
 })

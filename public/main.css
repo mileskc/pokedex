@@ -1,6 +1,5 @@
 
 body {
-    /* background: linear-gradient(rgb(214, 67, 67), rgb(156, 65, 65)) */
     background-color: white;
 }
 
@@ -30,7 +29,6 @@ nav {
 #create {
     font-size: 30px;
     padding: 20px;
-    /* color: rgb(247, 219, 144); */
 }
 
 #create:hover {
@@ -40,10 +38,10 @@ nav {
 .page {
     display: flex;
     flex-wrap: wrap;
-    /* width: 1200px; */
     width: 100%;
     justify-content: center;
 }
+
 .entry {
     width: 200px;
     height: 280px;
@@ -52,7 +50,6 @@ nav {
     flex-direction: column;
     background-color: rgb(65, 60, 60);
     margin: 10px;
-    /* justify-content: center; */
     align-items: center;
     border-radius: 5px;
     border: 10px solid gray;
@@ -78,7 +75,6 @@ a:hover {
 }
 
 img {
-    /* width: 130px; */
     width: 85%;
     height: 50%;
     display: flex;
@@ -106,17 +102,10 @@ input {
     height: 30px;
     color: white;
     margin: 20px 10px 10px 10px;
-    /* background-color: rgb(235, 176, 110); */
     background-color: rgb(102, 109, 204);
-    /* border: solid rgb(223, 79, 79) 2px; */
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
 }
-
-/* .delete-form {
-    font-size: 20px;
-    height: 40px;
-} */
 
 .button-container {
     display: flex;
@@ -127,8 +116,6 @@ input {
     height: 30px;
     margin-top: 15px;
     background-color: white;
-    /* background-color: rgb(235, 176, 110); */
-    /* border: solid rgb(235, 176, 110) 2px; */
     font-family: 'Roboto', sans-serif;
     border: 1px solid gray;
     border-radius: 5px;

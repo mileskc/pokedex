@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokedex</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-    /> -->
     <link href="https://fonts.googleapis.com/css?family=Caveat|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
 </head>
@@ -28,7 +24,6 @@
             <img src ="<%=pokemon.img%>">
             <div class = "button-container">
                 <form class = "delete-form" action = "/pokedex/<%=index%>?_method=DELETE" method = "POST">
-                    <!-- <input class = "button-delete" type = "submit" value = "DELETE"> -->
                     <button class = "button-delete">DELETE</button>
                 </form>
                 <div id = "edit">
