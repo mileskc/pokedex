@@ -75,6 +75,14 @@ a:hover {
 }
 
 img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.img {
     width: 85%;
     height: 50%;
     display: flex;
@@ -120,6 +128,14 @@ input {
     border: 1px solid gray;
     border-radius: 5px;
     
+}
+
+.button-delete:hover  {
+    cursor: pointer;
+}
+
+.button-edit:hover {
+    cursor: pointer;
 }
 
 .button-create {

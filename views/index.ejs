@@ -21,7 +21,7 @@
     <% pokedex.forEach((pokemon, index) => { %>
       <div class = "entry">
         <a class = "poke-name" href="/pokedex/<%=index%>"><%=pokemon.name%></a>
-        <img src ="<%=pokemon.img%>">
+        <a class = "img" href="/pokedex/<%=index%>"><img src ="<%=pokemon.img%>"></a>
         <div class = "button-container">
           <form class = "delete-form" action = "/pokedex/<%=index%>?_method=DELETE" method = "POST">
             <button class = "button-delete">DELETE</button>
